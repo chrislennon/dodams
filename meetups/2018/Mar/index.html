@@ -1,147 +1,35 @@
 ---
+layout: default
+
+title: Schiphol
+image: ./schiphol-group-logo.jpg
+description: >
+                Plane Sailing - Taking off with containers
+
+talk1:
+    title: Developing on Kubernetes
+    presenter: Michael Hausenblas
+    image: ./Michael.png
+
+talk2:
+    title: Building a scalable learning platform with Terraform, Kubernetes and Google Cloud
+    presenter: Bas Tichelaar
+    image: ./Bas.jpg
 ---
 
-<!doctype html>
-<html lang="en">
+{% include welcome.html title=page.title description=page.description image=page.image %}
 
-    <head>
-        <meta charset="utf-8">
+{% include talk.html title=page.talk1.title presenter=page.talk1.presenter image=page.talk1.image %}
 
-        <title>Schiphol Group</title>
+{% include break.html %}
 
-        <meta name="description" content="March Meetup">
-        <meta name="author" content="devops Amsterdam">
+{% include talk.html title=page.talk2.title presenter=page.talk2.presenter image=page.talk2.image %}
 
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-        <link rel="stylesheet" href="{{ site.baseurl }}/thirdparty/reveal.js/css/reveal.css">
-        <link rel="stylesheet" href="{{ site.baseurl }}/style/dodams.css" id="theme">
-
-        <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="{{ site.baseurl }}/thirdparty/reveal.js/lib/css/zenburn.css">
-
-        <!-- Printing and PDF exports -->
-        <script>
-            var link = document.createElement( 'link' );
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-            link.href = window.location.search.match( /print-pdf/gi ) ? '{{ site.baseurl }}/thirdparty/reveal.js/css/print/pdf.css' : '{{ site.baseurl }}/thirdparty/reveal.js/css/print/paper.css';
-            document.getElementsByTagName( 'head' )[0].appendChild( link );
-        </script>
-
-        <!--[if lt IE 9]>
-        <script src="{{ site.baseurl }}/thirdparty/reveal.js/lib/js/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-
-    <body>
-
-        <div class="reveal">
-
-            <!-- Static elements for headers/footers etc -->
-            <div class="staticElements">
-                    <div class="headR">
-                    <img src="{{ site.baseurl }}/images/dodams.png"></img>
-                    </div>
-                </div>
-
-            <!-- Horizontal slides sections -->
-            <div class="slides">
-                <!-- Welcome Page -->
-                <section>
-                    
-                    <img class="logo-large" src="./schiphol-group-logo.jpg">
-                    <h3>March</h3>
-                    <p>
-                        Plane Sailing - Taking off with containers
-                    </p>
-                </section>
-
-                <!-- Talk Page -->
-                <section>
-                    <div class="thumbnail">
-                        <img class="portrait" src="./Michael.png">
-                    </div>
-                    <p>
-                         Developing on Kubernetes
-                    </p>
-                    <p>
-                        <small>
-                            Michael Hausenblas
-                        </small>
-                    </p>
-                    
-                </section>
-
-                <!-- Break Page -->
-                <section>
-                        
-                        <img class="logo-large" src="{{ site.baseurl }}/images/dodams.png">
-                        <h3>Break!</h3>
-                </section>
-
-                <!-- Talk Page -->
-                <section>
-                        <div class="thumbnail">
-                                <img class="portrait" src="./Bas.jpg">
-                        </div>
-                        <p>
-                            Building a scalable learning platform with Terraform, Kubernetes and Google Cloud
-                        </p>
-                        <p>
-                            <small>
-                                Bas Tichelaar
-                            </small>
-                        </p>
-                        
-                    </section>
-
-                    <!-- Promo Page -->
-                <section>
-                    <h2>Promo Codes!</h2>
-                    <img class="logo-large" src="./TODO.png">
-                    <p>
-                        <span class="promo">TODO</span>
-                    </p>
-                    <p>
-                        Something to go here...
-                    </p>
-                </section>
-            </div>
-
-        </div>
-
-        <script src="{{ site.baseurl }}/thirdparty/reveal.js/lib/js/head.min.js"></script>
-        <script src="{{ site.baseurl }}/thirdparty/reveal.js/js/reveal.js"></script>
-
-
-        <script>
-
-            // More info https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: true,
-
-                transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-                // More info https://github.com/hakimel/reveal.js#dependencies
-                dependencies: [
-                    { src: '{{ site.baseurl }}/thirdparty/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: '{{ site.baseurl }}/thirdparty/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '{{ site.baseurl }}/thirdparty/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '{{ site.baseurl }}/thirdparty/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: '{{ site.baseurl }}/thirdparty/reveal.js/plugin/search/search.js', async: true },
-                    { src: '{{ site.baseurl }}/thirdparty/reveal.js/plugin/zoom-js/zoom.js', async: true },
-                    { src: '{{ site.baseurl }}/thirdparty/reveal.js/plugin/notes/notes.js', async: true }
-                ]
-            });
-
-        </script>
-
-    </body>
-</html>
+<!-- Promo Page -->
+<section>
+    <h2>Promo Codes!</h2>
+    <img class="logo-large" src="{{ site.baseurl }}/images/promo-example.jpg">
+    <p>
+        This is an example page for showing a <span class="promo">promotional discount</span>.
+    </p>
+</section>

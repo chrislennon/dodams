@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+    {% include head.html title=page.title description=page.description %}
+
+    <body>
+
+        <div class="reveal">
+
+            {% include header.html %}
+
+            <!-- Horizontal slides sections -->
+            <div class="slides">
+                {{ content }}
+            </div>
+
+        </div>
+
+        {% include reveal.html %}
+
+    </body>
+</html>
