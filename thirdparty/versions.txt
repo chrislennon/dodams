@@ -1,0 +1,2 @@
+# Manual version tracking for manually included packages
+reveal.js == 3.6.0
