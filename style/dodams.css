@@ -9,13 +9,6 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  * CUSTOM STYLES
  *********************************************/
 
-img .logo-large {
-  border: none; /* TOFIX - Currently inline */
-  box-shadow: none; /* TOFIX - Currently inline */
-  width: auto;
-  height: 200px;
-}
-
 div.headR {
   top: 1%;
   display: block;
@@ -27,37 +20,10 @@ div.headR {
   direction: rtl;
 }
 
-.thumbnail {
-  position: relative;
-  float: left;
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-}
-.thumbnail img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 100%;
-  width: auto;
-  -webkit-transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-          transform: translate(-50%,-50%);
-
-  border: none; /* TOFIX - Currently inline */
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-.thumbnail img.portrait {
-  width: 100%;
-  height: auto;
-}
-
 .promo {
-  colour: red; /* TOFIX - Currently inline */
+  color: red; /* TOFIX - Currently inline */
 }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -295,6 +261,42 @@ body {
   background: rgba(255, 255, 255, 0.2);
   border-color: #2a76dd;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
+
+.reveal section img.logo-large {
+  border: none;
+  box-shadow: none;
+  width: auto;
+  height: 200px;
+}
+
+.thumbnail {
+  position: relative;
+  float: left;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.thumbnail img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+
+  border: none; /* TOFIX - Currently inline */
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.thumbnail img.portrait {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
 
 /*********************************************
  * NAVIGATION CONTROLS
