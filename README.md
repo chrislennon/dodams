@@ -15,7 +15,8 @@
 Create a folder for the relavent month `./meetups/2018/Month`.
 Create an index.html with the following parameters - see `meetups\example\index.html` for an example.
 
-Main Variables
+Main Variables:
+
 **parameter**|**example value**|**purpose**
 :-----:|:-----:|:-----:
 layout| default| defines which style of presentation to use (only supports default)
@@ -26,6 +27,7 @@ talks| *Array of Talks*| associative array of talks - see below
 promos| *Array of Promos*| associative array of promotional slides - see below
 
 Specifiying talks - for each talk add an array element containing the following:
+
 **parameter**|**example value**|**purpose**
 :-----:|:-----:|:-----:
 title| A Presentation Title| defines the name of the presentation
@@ -33,6 +35,7 @@ speaker| Presenter Name| name of the speaker
 image| ./profile-pic.png| picture of the speaker
 
 Specifiying promo slides - for each slide add an array element containing the following:
+
 **parameter**|**example value**|**purpose**
 :-----:|:-----:|:-----:
 title| A Presentation Title| defines the name of the promotion
