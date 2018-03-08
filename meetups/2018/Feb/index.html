@@ -6,40 +6,19 @@ image: ./bloomon_logo.png
 description: >
             Flowers, Coding and DevOps, the perfect combo
 
-talk1:
-    title: Game of Thorns - Digitizing the supply chain in the flower industry
-    presenter: Teddy Dimitrova
-    image: ./Teddy.jpg
+talks:
+    - title: Game of Thorns - Digitizing the supply chain in the flower industry
+      speaker: Teddy Dimitrova
+      image: ./Teddy.jpg
 
-talk2:
-    title: Knee deep in microservices
-    presenter: Ádám Sándor
-    image: ./Adam.jpg
+    - title: Knee deep in microservices
+      speaker: Ádám Sándor
+      image: ./Adam.jpg
 
-talk3:
-    title: Complex problem solving
-    presenter: Jaap Trouw
-    image: ./Jaap.jpg
+    - title: Complex problem solving
+      speaker: Jaap Trouw
+      image: ./Jaap.jpg
     
 ---
 
-{% include welcome.html title=page.title description=page.description image=page.image %}
-
-{% include talk.html title=page.talk1.title presenter=page.talk1.presenter image=page.talk1.image %}
-
-{% include break.html %}
-
-{% include talk.html title=page.talk2.title presenter=page.talk2.presenter image=page.talk2.image %}
-
-{% include break.html %}
-
-{% include talk.html title=page.talk3.title presenter=page.talk3.presenter image=page.talk3.image %}
-
-<!-- Promo Page -->
-<section>
-    <h2>Promo Codes!</h2>
-    <img class="logo-large" src="{{ site.baseurl }}/images/promo-example.jpg">
-    <p>
-        This is an example page for showing a <span class="promo">promotional discount</span>.
-    </p>
-</section>
+{% include meetup-default.html %}

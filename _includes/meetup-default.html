@@ -1,0 +1,14 @@
+{% include welcome.html title=page.title description=page.description image=page.image %}
+
+{% for talk in page.talks %}
+    {% include talk.html title=talk.title speaker=talk.speaker image=talk.image %}
+
+    {% if forloop.rindex0 > 0 %}
+        {% include break.html %}
+    {% endif %}
+{% endfor %}
+
+{% for promo in page.promos %}
+    {% include promo.html title=promo.title description=promo.description image=promo.image %}
+
+{% endfor %}

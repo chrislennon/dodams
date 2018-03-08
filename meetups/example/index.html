@@ -8,30 +8,24 @@ description: >
                 <a href="https://github.com/hakimel/reveal.js">reveal.js</a> with 
                 <a href="https://github.com/jekyll/jekyll">Jekyll</a> on <a href="https://pages.github.com/">GitHub Pages</a>
 
-talk1:
-    title: Title of presentation 1
-    presenter: Presenter Name
-    image: ./profile.png
+talks:
+    - title: Title of presentation 1
+      speaker: Speaker Name
+      image: ./profile.png
 
-talk2:
-    title: Title of presentation 2
-    presenter: Presenter2 Name
-    image: ./profile.png
+    - title: Title of presentation 2
+      speaker: Speaker 2 Name
+      image: ./profile.png
+
+promos:
+    - title: Example1
+      description: >
+                    This is an example page for showing a <span class="promo">promotional discount</span>
+      image: ./promo-example.jpg
+    - title: Example2
+      description: >
+                    This is another example page for showing a <span class="promo">promotional discount</span>
+      image: ./promo-example.jpg
 ---
 
-{% include welcome.html title=page.title description=page.description image=page.image %}
-
-{% include talk.html title=page.talk1.title presenter=page.talk1.presenter image=page.talk1.image %}
-
-{% include break.html %}
-
-{% include talk.html title=page.talk2.title presenter=page.talk2.presenter image=page.talk2.image %}
-
-<!-- Promo Page -->
-<section>
-    <h2>Promo Codes!</h2>
-    <img class="logo-large" src="{{ site.baseurl }}/images/promo-example.jpg">
-    <p>
-        This is an example page for showing a <span class="promo">promotional discount</span>.
-    </p>
-</section>
+{% include meetup-default.html %}
